@@ -1,0 +1,6 @@
+untracked/*
+**/*.RProject
+**/*.Rhistory
+**/*.RData
+**/*.pyc
+
