@@ -1,0 +1,15 @@
+{
+  "data": "/Users/chris/activeMDS/example/test.csv",
+  "ndim": 3,
+  "nepochs": 10,
+  "traincodes":[1],
+  "verbose":true,
+  "log": true,
+  "debug": false,
+  "configs": [
+    {
+      "name": "config1",
+      "proportion": 1.0
+    }
+  ]
+}
