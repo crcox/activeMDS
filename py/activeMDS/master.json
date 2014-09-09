@@ -1,7 +1,11 @@
 {
-  "condor": false,
-  "data": "data/test.csv",
-  "ndim": 3,
+  "version": "EXP01",
+  "condor": {
+    "staging":"EXP01",
+    "output": "EXP01_out"
+  },
+  "local": {},
+  "data": "test.csv",
   "nepochs": 10,
   "traincodes":[1],
   "verbose":true,
@@ -9,7 +13,102 @@
   "debug": false,
   "configs": [
     {
-      "name": "config1",
+      "name": "101",
+      "proportion": 0.1
+    },
+    {
+      "name": "102",
+      "ndim": 2,
+      "proportion": 0.2
+    },
+    {
+      "name": "103",
+      "ndim": 2,
+      "proportion": 0.3
+    },
+    {
+      "name": "104",
+      "ndim": 2,
+      "proportion": 0.4
+    },
+    {
+      "name": "105",
+      "ndim": 2,
+      "proportion": 0.5
+    },
+    {
+      "name": "106",
+      "ndim": 2,
+      "proportion": 0.6
+    },
+    {
+      "name": "107",
+      "ndim": 2,
+      "proportion": 0.7
+    },
+    {
+      "name": "108",
+      "ndim": 2,
+      "proportion": 0.8
+    },
+    {
+      "name": "109",
+      "ndim": 2,
+      "proportion": 0.9
+    },
+    {
+      "name": "110",
+      "ndim": 2,
+      "proportion": 1.0
+    },
+    {
+      "name": "201",
+      "ndim": 3,
+      "proportion": 0.1
+    },
+    {
+      "name": "202",
+      "ndim": 3,
+      "proportion": 0.2
+    },
+    {
+      "name": "203",
+      "ndim": 3,
+      "proportion": 0.3
+    },
+    {
+      "name": "204",
+      "ndim": 3,
+      "proportion": 0.4
+    },
+    {
+      "name": "205",
+      "ndim": 3,
+      "proportion": 0.5
+    },
+    {
+      "name": "206",
+      "ndim": 3,
+      "proportion": 0.6
+    },
+    {
+      "name": "207",
+      "ndim": 3,
+      "proportion": 0.7
+    },
+    {
+      "name": "208",
+      "ndim": 3,
+      "proportion": 0.8
+    },
+    {
+      "name": "209",
+      "ndim": 3,
+      "proportion": 0.9
+    },
+    {
+      "name": "210",
+      "ndim": 3,
       "proportion": 1.0
     }
   ]

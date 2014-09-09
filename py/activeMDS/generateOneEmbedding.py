@@ -1,12 +1,19 @@
-import json
 import activeMDS as mds
+import csv
+import json
 
-model = mds.initializeEmbedding(responses['nitems'],master['ndim'])
+jsonfile = 'config.json'
+
+with open(jsonfile,'rb') as f:
+    config = json.load(f)
+
+responses = mds.read_triplets(config['data'])
+model = mds.initializeEmbedding(responses['nitems'],config['ndim'])
 lossLog = mds.fitModel(model, responses, config)
-with open(os.path.join(outdir,'loss.csv'),'wb') as f:
+with open('loss.csv','wb') as f:
     writer = csv.writer(f)
     writer.writerows(lossLog)
 
-with open(os.path.join(outdir,'embedding.csv'),'wb') as f:
+with open('embedding.csv','wb') as f:
     writer = csv.writer(f)
     writer.writerows(model)
