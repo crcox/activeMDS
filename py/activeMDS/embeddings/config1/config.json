@@ -1,0 +1,1 @@
+{"ndim": 3, "verbose": true, "name": "config1", "condor": false, "proportion": 1.0, "nepochs": 10, "traincodes": [1], "debug": false, "configs": [{"proportion": 1.0, "name": "config1"}], "data": "data/test.csv", "log": true}

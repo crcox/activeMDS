@@ -1,5 +1,6 @@
 {
-  "data": "/Users/chris/activeMDS/example/test.csv",
+  "condor": false,
+  "data": "data/test.csv",
   "ndim": 3,
   "nepochs": 10,
   "traincodes":[1],
